@@ -333,8 +333,8 @@ margin: 0 20px;
   background-color: #fec10f;
 }
 #popup {
-  width: 555px;
-  height: 375px;
+  width: 60%;
+  height: 60%;
   background: #fec10f;
   border: 5px solid #000;
   border-radius: 25px;
@@ -348,11 +348,18 @@ margin: 0 20px;
 }
 
 #popup div{
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#popup div h2{
+  /* position: absolute;
+  right: 4%;
+  top: -6%;
+  font-size: 39px; */
+}
 #popup div p{
   position: absolute;
   right: 4%;
@@ -382,6 +389,19 @@ margin: 0 20px;
 @media only screen and (max-width: 630px){
   #social{
     display: none;
+  }
+  #input_box{
+    width: 100px;
+    height: 60px;
+    position: fixed;
+    bottom: 10%;
+    right: 6%;
+    z-index: 4;
+    background-color: #fec10f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23px;
   }
   .footer{
     height: 80px;

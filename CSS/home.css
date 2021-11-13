@@ -1,0 +1,226 @@
+
+/* Home ............................................... */
+
+#home{
+    display: flex;
+    /* background-color: #000000; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.9;
+    overflow-x: hidden;
+    /* box-shadow: 4px 7px 13px rgb(255, 255, 255); */
+}
+
+
+
+#home .content h1::before{
+  content: "";
+  position: absolute;
+  top: 36.65%;
+  left: 43%;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background:#fec10f;
+  z-index: -1;
+}
+
+#home .content{
+  display: flex;
+  z-index: 1;
+  color: #071215;
+  flex-direction: column;
+}
+#typewriter{
+  margin-top: 0px;
+  height: 75px;
+}
+
+#home .content h1{
+  padding: 10px 0px 2px 0px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.60px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+  
+#home button{
+  font-size: 16px;
+    font-weight: 700;
+    padding: 12px 27px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--primary-c);
+    border: none;
+}
+
+#home button:hover{
+  cursor: pointer;
+}
+#home .btn{
+  display: block;
+  z-index: 1;
+}
+#home .btn .btn1{
+  background-color: #fec10f;
+  /* margin-left: 131px;
+  margin-top: 20px; */
+  height: 43px;
+  width: 100px;
+  font-size: 19px;
+}
+
+#home .btn .btn1:hover{
+  background-color: #000000;
+}
+
+#home .btn .btn2{
+  background-color: #071215;
+  /* margin-left: 131px; */
+  /* margin-top: 20px; */
+  height: 45px;
+  width: 100px;
+  font-size: 19px;
+}
+
+
+/* Responsive for Home ==========>>>>>>>>>>>>>> */
+
+
+@media only screen and (max-width: 1250px){
+  #home button {
+    padding: 12px 12px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  #home .content h1{
+    font-size: 1.0rem;
+  }
+  #home .content p, span {
+    font-size: 2rem;
+}
+}
+
+@media only screen and (max-width: 910px){
+  #home button {
+    padding: 12px 12px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  #home .content{
+    left: 5%;
+  }
+
+
+  #home .content h1::before{
+    left: 38%;
+  }
+  #home .content button{    
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 12px;
+  }
+
+  #home .btn1 {
+    left: 6%;
+}
+
+#home .btn2 {
+  left: 19%;
+}
+
+  .social{
+    display: none;
+  }
+
+  .check_list{
+    right: -6%;
+  }
+
+  .check_list span{
+    margin: 3px 3px;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  #home .btn2 {
+    top: 50%;
+    left: 22%;
+  }
+  #home .btn1 {
+    top: 50%;
+  }
+}
+
+@media only screen and (max-width: 680px){
+  
+  .check_list{
+    display: none;
+  }
+  #home{
+    height: 800px;
+    padding-bottom: 300px;
+  }
+  #home .btn2 {
+    left: 23%;
+  }
+  #home .content p, span {
+    font-size: 1.8rem;
+}
+
+#home .content h1::before{
+  left: 36%;
+  top: 19.65%;
+}
+}
+
+@media only screen and (max-width: 630px){
+  #home .content h1{
+    margin-bottom: 35px;
+  }
+  #home .btn2 {
+    left: 24%;
+  }
+
+  #home .content p{
+    margin-bottom: 25px;
+  }
+  #home .content h1::before{
+    left: 34%;
+    top: 16.65%;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  #home .btn2 {
+    left: 28%;
+  }
+  #home .content h1::before{
+    left: 31%;
+    top: 16.65%;
+  }
+}
+
+@media only screen and (max-width: 390px){
+  #home .btn2 {
+    left: 6%;
+    top: 64%;
+    padding: 12px 17px;
+  }
+  #home .btn1 {
+    top: 57%;
+  }
+  #home .content h1::before{
+    left: 28%;
+    top: 16.65%;
+  }
+}
+
+

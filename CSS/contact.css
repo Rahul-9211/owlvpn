@@ -1,0 +1,366 @@
+
+  /* Contact ............................................... */
+
+  #Contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 873px;
+  }
+  #Contact .contact_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+  #Contact .contact_container .img{
+    height: 594px;
+    width: 32%;
+    margin: 0px 16px;
+  }
+  #Contact .contact_container .img img{
+    width: 100%;
+    height: 645px;
+    opacity: 0.5;
+    box-shadow: 1px 1px 5px 1px #000000;;
+  }
+  
+  #Contact .contact_container .data{
+    height: 594px;
+    width: 596px;
+    /* position: absolute;
+    top: 120px ; */
+    /* left: 42%; */
+    margin-left: 31px;
+  }
+  
+  #Contact .contact_container .data .written{
+    height: 232px;
+    width: 580px;
+    background: transparent;
+  }
+  
+  #Contact .contact_container .data .written p{
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    margin-top: 56px;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    padding: 5px 0px 6px 15px;
+  }
+  
+  #Contact .contact_container .data .written p::before{
+    content: "";
+    width: 36px;
+    height: 36px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    position: absolute;
+    background: #fec10f;
+    z-index: -1;
+  }
+  
+  #Contact .contact_container .data .written h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  #Contact .contact_container .data .written .divider{
+    height: 4px;
+    background-color: #fec10f;
+    width: 63px;
+    margin-left: 10px;
+    margin-bottom: 19px;
+  }
+  
+  #Contact .contact_container .data .written span{
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+  }
+
+  #Contact .contact_container .data .written .span{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    width: 80%;
+  }
+  
+  #Contact .contact_container .data .contact_form .name_email{
+    margin-top: 25px;
+  }
+
+  #Contact .contact_container .data .contact_form input{
+    background-color: transparent;
+    outline: none;
+    height: 45px;
+    width: 40%;
+    margin-right: 24px;
+  border: 1px solid #f1f1f1;
+  color: white;
+  padding: 10px;
+  }
+
+  #Contact .contact_container .data .contact_form textarea{
+    background-color: transparent;
+    margin-top: 25px;
+    height: 180px;
+    width: 85%;
+    color: white;
+    resize: none;
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    position: relative;
+  }
+
+  #Contact .contact_container .data .contact_form .button button{
+    font-size: 14px;
+    font-weight: 700;
+    height: 48px;
+    color: #f1f1f1;
+    cursor: pointer;
+    width: 158px;
+    border: none;
+    margin-top: 32px;
+    background-color:#fec10f;
+  }
+  #Contact .contact_container .data .contact_form .name_email #contact_name{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    
+    bottom: 46.6%;
+    left: 46%;
+    padding: 0px 6px;
+    background-color: rgb(0, 0, 0);
+  }
+  #Contact .contact_container .data .contact_form .name_email #contact_email{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    bottom: 46.9%;
+    left: 66%;
+    padding: 0px 6px;
+    background-color: rgb(0, 0, 0);
+  }
+  #Contact .contact_container .data .contact_form .message #contact_message{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    left: 46%;
+    bottom: 39%;
+    padding: 0px 6px;
+    background-color:rgb(0, 0, 0);
+  }
+  #Contact .contact_container .data .contact_form .button button:hover{
+    background-color: rgb(0, 0, 0) ;
+    border: 1px solid white;
+  }
+/* 
+  #contact_name{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    bottom: 6.9%;
+    left: 47%;
+    padding: 0px 6px;
+    background-color: rgb(0, 0, 0);
+  } */
+/* 
+  #contact_email{    
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    bottom: 6.9%;
+    right: 28%;
+    padding: 0px 6px;
+    background-color: rgb(0, 0, 0);
+  }
+
+  #contact_message{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    bottom: 5.6%;
+    left: 47%;
+    padding: 0px 6px;
+    background-color:rgb(0, 0, 0);
+  } */
+
+  /* Responsive for Home ==========>>>>>>>>>>>>>> */
+  @media only screen and (max-width: 1250px){
+    #Contact .contact_container .data .contact_form .message #contact_message{
+      left: 44%;
+    }
+    #Contact .contact_container .data .contact_form .name_email #contact_name{
+      left: 44%;
+    }
+    #Contact .contact_container .data .contact_form .name_email #contact_email{
+      right: 23%;
+      left: 69%;
+    }
+      }
+  @media only screen and (max-width: 1150px){
+#Contact .contact_container .data .contact_form input{
+      width: 44%;
+    }
+  
+#Contact .contact_container .data .contact_form textarea{
+      width: 94%;
+    }
+#Contact .contact_container .data .written h1 {
+      font-size: 32px;
+  }
+#Contact .contact_container .data {
+    width: 52%;
+}
+#Contact .contact_container .data .written {
+  width: 94%;
+}
+#Contact .contact_container .data .written .span {
+  width: 95%;
+}
+  
+  }
+
+  @media only screen and (max-width: 980px){
+
+    #Contact .contact_container .data .contact_form .message #contact_message{
+      left: 8%;
+      bottom: 38.2%;
+    }
+    #Contact .contact_container .data .contact_form .name_email #contact_name{
+      left: 8%;
+      bottom: 47%;
+    }
+    #Contact .contact_container .data .contact_form .name_email #contact_email{
+      right: 42% !important;
+      bottom: 47%;
+      left: 50%;
+      width: 90px;
+    }
+#Contact .contact_container .data {
+  margin-left: 0px;
+  width: 91.5%;
+  left: 10%;
+}
+#Contact .contact_container .img{
+  display: none;
+}
+#Contact .contact_container .data .written {
+  height: 229px;
+}
+#Contact .contact_container .data .contact_form textarea{
+  width: 92%;
+}
+
+#Contact .contact_container .data .contact_form .button button {
+  height: 38px;
+  width: 125px;
+}
+  }
+
+ @media only screen and (max-width: 600px){
+    #Contact .contact_container .data .written h1 {
+      font-size: 23px;
+  }
+  #Contact .contact_container .data .contact_form textarea {
+    margin-top: 0px;
+    width: 90.5%;
+}
+#Contact .contact_container .data .contact_form input {
+  width: 90%;
+  margin-bottom: 31px;
+}
+#Contact .contact_container .data .written span {
+  font-size: 13px;
+}
+
+
+#Contact .contact_container .data .contact_form .message #contact_message{
+  left: 8%;
+  bottom: 30%;
+}
+#Contact .contact_container .data .contact_form .name_email #contact_name{
+  left: 8%;
+  bottom: 47.2%;
+}
+#Contact .contact_container .data .contact_form .name_email #contact_email{
+  bottom: 38.5%;
+  left: 8%;
+}
+   }
+
+ @media only screen and (max-width: 400px){
+    #Contact .contact_container .data .written p {
+      font-size: 15px;
+  }
+  #Contact .contact_container .data .written span {
+    font-size: 11px;
+}
+#Contact .contact_container .data .written h1 {
+  font-size: 19px;
+}
+  #Contact .contact_container .data .written h1 {
+    font-size: 21px;
+}
+#contact_email {
+  top: 57%;
+  left: 2%;
+}
+#contact_message {
+  top: 70%;
+  left: 2%;
+}
+   }
+   
+   @media only screen and (max-width: 370px){
+    #Contact .contact_container .data .written span {
+      font-size: 11px;
+  }
+  #Contact .contact_container .data .written p {
+    font-size: 12px;
+}
+#Contact .contact_container .data .written h1 {
+  font-size: 18px;
+}
+#Contact .contact_container .data .contact_form input {
+  width: 90%;
+}
+
+
+#Contact .contact_container .data .contact_form .message #contact_message{
+  left: 8%;
+  bottom: 30%;
+}
+#Contact .contact_container .data .contact_form .name_email #contact_name{
+  left: 8%;
+  bottom: 47.2%;
+}
+#Contact .contact_container .data .contact_form .name_email #contact_email{
+  bottom: 38.5%;
+  left: 8%;
+}
+   }
+   @media only screen and (max-width: 310px){
+    #Contact .contact_container .data .contact_form .name_email {
+      margin-top: 70px;
+  }
+  #contact_name {
+    top: 52%;
+}
+#contact_email {
+  top: 65%;
+}
+#contact_message {
+  top: 78%;
+}
+   }
+   
